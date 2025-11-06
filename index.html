@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib Ullah - Digital Marketer Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+    /* Custom font */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    
+    /* --- loading-bar.min.css content --- */
+    .ldBar{position:relative}.ldBar.label-center>.ldBar-label{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-shadow:0 0 3px #fff}.ldBar-label:after{content:"%";display:inline}.ldBar.no-percent .ldBar-label:after{content:""}
+    
+    /* --- Custom style to match old design --- */
+    .ldBar-label {
+        color: #4f46e5; /* Indigo-600 */
+        font-weight: bold;
+        font-size: 1.25rem; /* text-xl */
+    }
+
+</style>
+
+
+</head>
+<body class="antialiased text-gray-800">
+
+<!-- Header / Navigation Bar -->
+<header class="bg-white shadow-lg sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-indigo-600">
+            Habib Ullah Portfolio
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-600 hover:text-indigo-600 transition duration-300">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+            <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300 font-semibold">Skills</a>
+            <a href="#services" class="text-gray-600 hover:text-indigo-600 transition duration-300">Services</a>
+            <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+        </nav>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-300">
+            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu (collapsible) -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white shadow-lg">
+        <a href="#home" class="block text-gray-600 hover:text-indigo-600 transition duration-300 py-2">Home</a>
+        <a href="#about" class="block text-gray-600 hover:text-indigo-600 transition duration-300 py-2">About</a>
+        <a href="#skills" class="block text-gray-600 hover:text-indigo-600 transition duration-300 py-2">Skills</a>
+        <a href="#services" class="block text-gray-600 hover:text-indigo-600 transition duration-300 py-2">Services</a>
+        <a href="#projects" class="block text-gray-600 hover:text-indigo-600 transition duration-300 py-2">Projects</a>
+        <a href="#contact" class="block text-gray-600 hover:text-indigo-600 transition duration-300 py-2">Contact</a>
+    </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="py-20 md:py-32 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+        
+        <!-- Text Content -->
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <p class="text-indigo-600 font-semibold uppercase tracking-widest mb-2 text-sm">CERTIFIED DIGITAL MARKETER</p>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-gray-900">
+                I am <span class="text-indigo-600">Habib Ullah</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                A Certified Digital Marketer specializing in high-converting ad campaigns across Meta, Google, and TikTok.
+            </p>
+            <a href="#contact" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                Get in Touch
+            </a>
+        </div>
+
+        <!-- Profile Image Placeholder -->
+        <div class="md:w-1/3">
+            <div class="w-56 h-56 md:w-72 md:h-72 bg-gray-300 rounded-full mx-auto shadow-2xl flex items-center justify-center border-4 border-indigo-500 overflow-hidden ring-4 ring-indigo-400 ring-opacity-30">
+                <!-- REPLACE the 'src' attribute below with your actual image URL -->
+                <img src="habibullah.jpeg" alt="Habib Ullah Profile Picture" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+            <h2 class="text-3xl font-bold text-center mb-10 text-indigo-600 border-b-2 border-indigo-200 pb-3 inline-block mx-auto">
+                About Me
+            </h2>
+            
+            <div class="text-lg text-gray-600 leading-relaxed space-y-4">
+                <p>
+                    Hi! I’m Habib Ullah, a dedicated <strong>Digital Marketing Expert</strong> with 6 months of practical experience helping local businesses grow online.
+                </p>
+                <p>
+                    At present, I work closely with my clients on <strong>Meta Ads (Facebook & Instagram)</strong>, <strong>Social Media Management</strong>, and <strong>YouTube Channel Management & Growth</strong>. These are the main services my current clients need. Beyond that, I also offer <strong>Google Ads</strong>, <strong>TikTok Ads</strong>, and <strong>Graphic Designing</strong>. I can run full campaigns, create creative ad content, and manage accounts across multiple platforms as required.
+                </p>
+                <p>
+                    I believe in <strong>clear commitments</strong> and <strong>real results</strong>. When I take a project, I focus on delivering <strong>measurable outcomes</strong>, whether that means more leads, higher engagement, or a stronger brand presence. I work with <strong>honesty</strong> and <strong>consistency</strong> to make sure my clients get the value they expect.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 3. Skills Section (Circular Progress Bars) -->
+    <section id="skills" class="py-16 md:py-24">
+        <div class="bg-gray-100 p-8 md:p-12 rounded-xl shadow-inner">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600 border-b-2 border-indigo-200 pb-3 inline-block mx-auto">
+                My Core Expertise
+            </h2>
+            
+            <!-- Skills Grid -->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Skill 1: Meta Ads -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="ldBar label-center"
+                         data-value="95"
+                         data-preset="circle"
+                         data-stroke="#4f46e5" 
+                         data-stroke-trail="#e0e7ff"
+                         data-stroke-width="10"
+                         style="width:120px; height:120px; margin: 0 auto 10px auto;">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 flex items-center justify-center">
+                        <img src="meta.png" alt="Meta Icon" class="w-6 h-6 mr-2"> 
+                        Meta Ads 
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Skilled in creating high-converting ad campaigns and managing audience targeting for better ROI.
+                    </p>
+                </div>
+
+                <!-- Skill 2: Google Ads -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="ldBar label-center"
+                         data-value="80"
+                         data-preset="circle"
+                         data-stroke="#4f46e5" 
+                         data-stroke-trail="#e0e7ff"
+                         data-stroke-width="10"
+                         style="width:120px; height:120px; margin: 0 auto 10px auto;">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 flex items-center justify-center">
+                        <img src="adwords.png" alt="Google Icon" class="w-6 h-6 mr-2">
+                        Google Ads
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Experienced in running Search, Display, and Video campaigns that drive quality traffic and leads.
+                    </p>
+                </div>
+
+                <!-- Skill 3: TikTok Ads -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="ldBar label-center"
+                         data-value="80"
+                         data-preset="circle"
+                         data-stroke="#4f46e5" 
+                         data-stroke-trail="#e0e7ff"
+                         data-stroke-width="10"
+                         style="width:120px; height:120px; margin: 0 auto 10px auto;">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 flex items-center justify-center">
+                        <img src="social-media.png" alt="TikTok Icon" class="w-6 h-6 mr-2">
+                        TikTok Ads Management
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Expert in launching creative short-form video ads to boost engagement and brand visibility.
+                    </p>
+                </div>
+                
+                <!-- Skill 4: SEO -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="ldBar label-center"
+                         data-value="85"
+                         data-preset="circle"
+                         data-stroke="#4f46e5" 
+                         data-stroke-trail="#e0e7ff"
+                         data-stroke-width="10"
+                         style="width:120px; height:120px; margin: 0 auto 10px auto;">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 flex items-center justify-center">
+                        <img src="search-engine-optimization.png" alt="SEO Icon" class="w-6 h-6 mr-2">
+                        SEO
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Focused on improving website ranking and organic reach through result-driven SEO strategies.
+                    </p>
+                </div>
+
+                <!-- Skill 5: Social Media Management -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="ldBar label-center"
+                         data-value="90"
+                         data-preset="circle"
+                         data-stroke="#4f46e5" 
+                         data-stroke-trail="#e0e7ff"
+                         data-stroke-width="10"
+                         style="width:120px; height:120px; margin: 0 auto 10px auto;">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 flex items-center justify-center">
+                        <img src="social-media M.png" alt="Social Media Icon" class="w-6 h-6 mr-2">
+                        Social Media Management
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Managing content, engagement, and analytics to build a consistent and active online presence.
+                    </p>
+                </div>
+                
+                <!-- Skill 6: YouTube Marketing -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="ldBar label-center"
+                         data-value="85"
+                         data-preset="circle"
+                         data-stroke="#4f46e5" 
+                         data-stroke-trail="#e0e7ff"
+                         data-stroke-width="10"
+                         style="width:120px; height:120px; margin: 0 auto 10px auto;">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900 flex items-center justify-center">
+                        <img src="youtube.png" alt="YouTube Icon" class="w-6 h-6 mr-2">
+                        YouTube Marketing
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Optimizing channels, managing uploads, and boosting growth through targeted promotion strategies.
+                    </p>
+                </div>
+
+            </div>
+            <!-- End Skills Grid -->
+        </div>
+    </section>
+    
+    <!-- 4. Services Section -->
+    <section id="services" class="py-16 md:py-24">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600 border-b-2 border-indigo-200 pb-3 inline-block mx-auto">
+                Services I Offer
+            </h2>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Service 1: Meta Ads -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="Meta.png" alt="Meta Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">Meta Ads (Facebook & Instagram)</h3>
+                            <p class="text-gray-600">
+                                I create and manage high-performing ad campaigns across Facebook and Instagram, helping businesses reach their target audience effectively and increase conversions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2: Google Ads -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="adwords.png" alt="Google Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">Google Ads</h3>
+                            <p class="text-gray-600">
+                                From Search to Display and Video campaigns, I set up and optimize Google Ads to maximize visibility and drive measurable business growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: TikTok Ads -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="social-media.png" alt="TikTok Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">TikTok Ads Management</h3>
+                            <p class="text-gray-600">
+                                I design and manage creative TikTok campaigns that engage viewers and build brand recognition among younger audiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4: YouTube Growth -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="youtube.png" alt="YouTube Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">YouTube Channel Management & Growth</h3>
+                            <p class="text-gray-600">
+                                I manage and grow YouTube channels through strategic optimization, audience targeting, and content recommendations that boost reach and engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Social Media Management -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="social-media M.png" alt="Social Media Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">Social Media Management</h3>
+                            <p class="text-gray-600">
+                                I handle complete social media management — from content creation to analytics — ensuring your brand stays active, engaging, and consistent across all platforms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6: Graphic Designing -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="graphic-designer.png" alt="Design Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">Graphic Designing</h3>
+                            <p class="text-gray-600">
+                                I create visually appealing ad creatives, social media posts, and brand visuals that attract attention and strengthen your brand identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 7: Strategy & Consultation -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="strategy-development.png" alt="Strategy Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">Marketing Strategy & Consultation</h3>
+                            <p class="text-gray-600">
+                                I help businesses plan result-driven marketing strategies, providing consultation and step-by-step guidance to achieve better online performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 8: Logo & Brand Style -->
+                <div class="p-6 rounded-xl shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-start">
+                        <img src="branding.png" alt="Logo Icon" class="w-10 h-10 mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-900">Logo & Brand Style</h3>
+                            <p class="text-gray-600">
+                                I design professional logos and build brand styles that give your business a unique, recognizable, and lasting identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects" class="py-16 md:py-24">
+        <div class="bg-gray-100 p-8 md:p-12 rounded-xl shadow-inner">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600 border-b-2 border-indigo-200 pb-3 inline-block mx-auto">
+                My Recent Projects (Coming Soon)
+            </h2>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Project 1 (Demo) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/400x250?text=Project+1" alt="Project 1 Thumbnail" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">E-commerce Sales Boost</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Client: Fashion Retailer<br>
+                        Platform: Meta Ads, Instagram
+                    </p>
+                    <p class="text-indigo-600 font-bold">Achieved: 5x Return on Ad Spend</p>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium">View Case Study &rarr;</a>
+                </div>
+
+                <!-- Project 2 (Demo) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/400x250?text=Project+2" alt="Project 2 Thumbnail" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Lead Generation for SaaS</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Client: Tech Startup<br>
+                        Platform: LinkedIn Ads, Facebook Ads
+                    </p>
+                    <p class="text-indigo-600 font-bold">Achieved: 200% Increase in Qualified Leads</p>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium">View Case Study &rarr;</a>
+                </div>
+
+                <!-- Project 3 (Demo) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://via.placeholder.com/400x250?text=Project+3" alt="Project 3 Thumbnail" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Brand Awareness - New Product</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Client: Beverage Company<br>
+                        Platform: TikTok Ads, Influencer Marketing
+                    </p>
+                    <p class="text-indigo-600 font-bold">Achieved: 10 Million+ Video Views</p>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium">View Case Study &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- 6. Contact Section -->
+    <section id="contact" class="py-16 md:py-24">
+        <div class="bg-indigo-50 p-8 md:p-12 rounded-xl shadow-inner text-center">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-800">
+                Contact Information
+            </h2>
+            <p class="text-lg text-gray-700 mb-8">
+                You can contact me using the methods below.
+            </p>
+            
+            <!-- Contact Links -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                
+                <!-- Email Link -->
+                <a href="mailto:rajahabibullah2006@gmail.com" class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <span class="text-indigo-600 text-2xl mr-3">📧</span>
+                    <span class="text-gray-800 font-medium">rajahabibullah2006@gmail.com</span>
+                </a>
+                
+                <!-- Phone Link -->
+                <a href="tel:+923415812512" class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <span class="text-indigo-600 text-2xl mr-3">📞</span>
+                    <span class="text-gray-800 font-medium">03415812512</span>
+                </a>
+                
+                <!-- WhatsApp Link (Official) -->
+                <a href="https://wa.me/message/7YUFR4BGFOECO1" target="_blank" class="flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <!-- WhatsApp SVG Icon -->
+                    <svg class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.06 21.94L7.31 20.58C8.76 21.39 10.37 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 6.45 17.5 2 12.04 2ZM17.46 15.59C17.21 16.24 16.06 16.88 15.28 16.98C14.63 17.06 13.79 17.05 13.08 16.78C12.44 16.54 11.39 16.19 10.16 15.08C8.62 13.71 7.67 12.04 7.48 11.73C7.28 11.42 6.57 10.42 6.57 9.5C6.57 8.58 7.11 8.09 7.31 7.89C7.51 7.69 7.8 7.61 8.02 7.61C8.24 7.61 8.44 7.62 8.62 7.66C8.8 7.7 8.97 7.74 9.17 8.09C9.4 8.5 9.87 9.6 9.95 9.74C10.03 9.88 10.1 10.02 10.03 10.17C9.96 10.32 9.89 10.43 9.77 10.55C9.65 10.67 9.53 10.78 9.4 10.91C9.28 11.04 9.14 11.19 9.28 11.44C9.42 11.69 9.97 12.63 10.84 13.43C11.9 14.39 12.78 14.68 13.02 14.8C13.26 14.92 13.45 14.9 13.61 14.73C13.8 14.54 14.17 14.01 14.41 13.7C14.66 13.39 14.91 13.32 15.15 13.4C15.39 13.48 16.4 13.97 16.65 14.09C16.9 14.21 17.06 14.27 17.13 14.38C17.2 14.49 17.2 15.01 17.46 15.59Z"/></svg>
+                    <span class="text-gray-800 font-medium">03415812512</span>
+                </a>
+                
+            </div>
+            <!-- End Contact Links -->
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 mt-16 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+        <p>&copy; 2025 Habib Ullah — Digital Marketing Expert | Designed with ❤️ by Habib Ullah.</p>
+    </div>
+</footer>
+
+<!-- loading-bar.min.js script -->
+<script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){var presets,simpleStr,wrap,slice$=[].slice,toString$={}.toString;presets=require("./presets").presets;simpleStr=function(arr){return arr.join("")};wrap=function(content){return"data:image/svg+xml;base64,"+btoa(content)};(function(){var make,handler,ldBar;make={head:function(viewBox){return'<?xml version="1.0" encoding="utf-8"?>\n        <svg xmlns="http://www.w3.org/2000/svg" viewBox="'+viewBox+'">'},gradient:function(dir,dur){var colors,ret,len,gx,gy,x,y,i$,i,idx;dir==null&&(dir=45);dur==null&&(dur=1);colors=slice$.call(arguments,2);ret=[this.head("0 0 100 100")];len=colors.length*4+1;dir=dir*Math.PI/180;gx=Math.pow(Math.cos(dir),2);gy=Math.sqrt(gx-Math.pow(gx,2));if(dir>Math.PI*.25){gy=Math.pow(Math.sin(dir),2);gx=Math.sqrt(gy-Math.pow(gy,2))}x=gx*100;y=gy*100;ret.push('<defs><linearGradient id="gradient" x1="0" x2="'+gx+'" y1="0" y2="'+gy+'">');for(i$=0;i$<len;++i$){i=i$;idx=i*100/(len-1);ret.push('<stop offset="'+idx+'%" stop-color="'+colors[i%colors.length]+'"/>')}ret.push('</linearGradient></defs>\n<rect x="0" y="0" width="400" height="400" fill="url(#gradient)">\n<animateTransform attributeName="transform" type="translate" from="-'+x+",-"+y+'"\nto="0,0" dur="'+dur+'s" repeatCount="indefinite"/></rect></svg>');return wrap(ret.join(""))},stripe:function(c1,c2,dur){var ret,i;c1==null&&(c1="#b4b4b4");c2==null&&(c2="#e6e6e6");dur==null&&(dur=1);ret=[this.head("0 0 100 100")];ret=ret.concat(['<rect fill="'+c2+'" width="100" height="100"/>',"<g><g>",function(){var i$,results$=[];for(i$=0;i$<13;++i$){i=i$;results$.push('<polygon fill="'+c1+'" '+('points="'+(-90+i*20)+",100 "+(-100+i*20)+",")+("100 "+(-60+i*20)+",0 "+(-50+i*20)+',0 "/>'))}return results$}().join(""),'</g><animateTransform attributeName="transform" type="translate" ','from="0,0" to="20,0" dur="'+dur+'s" repeatCount="indefinite"/></g></svg>'].join(""));return wrap(ret)},bubble:function(c1,c2,count,dur,size,sw){var ret,i$,i,idx,x,r,d;c1==null&&(c1="#39d");c2==null&&(c2="#9cf");count==null&&(count=15);dur==null&&(dur=1);size==null&&(size=6);sw==null&&(sw=1);ret=[this.head("0 0 200 200"),'<rect x="0" y="0" width="200" height="200" fill="'+c1+'"/>'];for(i$=0;i$<count;++i$){i=i$;idx=-(i/count)*dur;x=Math.random()*184+8;r=(Math.random()*.7+.3)*size;d=dur*(1+Math.random()*.5);ret.push(['<circle cx="'+x+'" cy="0" r="'+r+'" fill="none" stroke="'+c2+'" stroke-width="'+sw+'">','<animate attributeName="cy" values="190;-10" times="0;1" ','dur="'+d+'s" begin="'+idx+'s" repeatCount="indefinite"/>',"</circle>",'<circle cx="'+x+'" cy="0" r="'+r+'" fill="none" stroke="'+c2+'" stroke-width="'+sw+'">','<animate attributeName="cy" values="390;190" times="0;1" ','dur="'+d+'s" begin="'+idx+'s" repeatCount="indefinite"/>',"</circle>"].join(""))}return wrap(ret.join("")+"</svg>")}};handler={queue:{},running:false,main:function(timestamp){var keepon,removed,k,ref$,func,ret,this$=this;keepon=false;removed=[];for(k in ref$=this.queue){func=ref$[k];ret=func(timestamp);if(!ret){removed.push(func)}keepon=keepon||ret}for(k in ref$=this.queue){func=ref$[k];if(removed.indexOf(func)>=0){delete this.queue[k]}}if(keepon){return requestAnimationFrame(function(it){return this$.main(it)})}else{return this.running=false}},add:function(key,f){var this$=this;if(!this.queue[key]){this.queue[key]=f}if(!this.running){this.running=true;return requestAnimationFrame(function(it){return this$.main(it)})}}};window.ldBar=ldBar=function(selector,option){var xmlns,root,cls,idPrefix,id,domTree,newNode,x$,config,attr,that,isStroke,parseRes,dom,svg,text,group,length,path0,path1,patimg,img,ret,size,this$=this;option==null&&(option={});xmlns={xlink:"http://www.w3.org/1999/xlink"};root=toString$.call(selector).slice(8,-1)==="String"?document.querySelector(selector):selector;if(!root.ldBar){root.ldBar=this}else{return root.ldBar}cls=root.getAttribute("class")||"";if(!~cls.indexOf("ldBar")){root.setAttribute("class",cls+" ldBar")}idPrefix="ldBar-"+Math.random().toString(16).substring(2);id={key:idPrefix,clip:idPrefix+"-clip",filter:idPrefix+"-filter",pattern:idPrefix+"-pattern",mask:idPrefix+"-mask",maskPath:idPrefix+"-mask-path"};domTree=function(n,o){var k,v;n=newNode(n);for(k in o){v=o[k];if(k!=="attr"){n.appendChild(domTree(k,v||{}))}}n.attrs(o.attr||{});return n};newNode=function(n){return document.createElementNS("http://www.w3.org/2000/svg",n)};x$=document.body.__proto__.__proto__.__proto__;x$.text=function(t){return this.appendChild(document.createTextNode(t))};x$.attrs=function(o){var k,v,ret,results$=[];for(k in o){v=o[k];ret=/([^:]+):([^:]+)/.exec(k);if(!ret||!xmlns[ret[1]]){results$.push(this.setAttribute(k,v))}else{results$.push(this.setAttributeNS(xmlns[ret[1]],k,v))}}return results$};x$.styles=function(o){var k,v,results$=[];for(k in o){v=o[k];results$.push(this.style[k]=v)}return results$};x$.append=function(n){var r;return this.appendChild(r=document.createElementNS("http://www.w3.og/2000/svg",n))};x$.attr=function(n,v){if(v!=null){return this.setAttribute(n,v)}else{return this.getAttribute(n)}};config={type:"stroke",img:"",path:"M10 10L90 10M90 8M90 12","fill-dir":"btt",fill:"#25b","fill-background":"#ddd","fill-background-extrude":3,"pattern-size":null,"stroke-dir":"normal",stroke:"#25b","stroke-width":"3","stroke-trail":"#ddd","stroke-trail-width":.5,duration:1,easing:"linear",value:0,"img-size":null,bbox:null,"set-dim":true,"aspect-ratio":"xMidYMid","transition-in":false,min:0,max:100,precision:0,padding:undefined};config["preset"]=root.attr("data-preset")||option["preset"];if(config.preset!=null){import$(config,presets[config.preset])}for(attr in config){if(that=that=root.attr("data-"+attr)){config[attr]=that}}import$(config,option);if(config.img){config.path=null}isStroke=config.type==="stroke";parseRes=function(v){var parser,ret;parser=/data:ldbar\/res,([^()]+)\(([^)]+)\)/;ret=parser.exec(v);if(!ret){return v}return ret=make[ret[1]].apply(make,ret[2].split(","))};config.fill=parseRes(config.fill);config.stroke=parseRes(config.stroke);if(config["set-dim"]==="false"){config["set-dim"]=false}dom={attr:{"xmlns:xlink":"http://www.w3.org/1999/xlink",preserveAspectRatio:config["aspect-ratio"],width:"100%",height:"100%"},defs:{filter:{attr:{id:id.filter,x:-1,y:-1,width:3,height:3},feMorphology:{attr:{operator:+config["fill-background-extrude"]>=0?"dilate":"erode",radius:Math.abs(+config["fill-background-extrude"])}},feColorMatrix:{attr:{values:"0 0 0 0 1    0 0 0 0 1    0 0 0 0 1    0 0 0 1 0",result:"cm"}}},mask:{attr:{id:id.mask},image:{attr:{"xlink:href":config.img,filter:"url(#"+id.filter+")",x:0,y:0,width:100,height:100,preserveAspectRatio:config["aspect-ratio"]}}},g:{mask:{attr:{id:id.maskPath},path:{attr:{d:config.path||"",fill:"#fff",stroke:"#fff",filter:"url(#"+id.filter+")"}}}},clipPath:{attr:{id:id.clip},rect:{attr:{class:"mask",fill:"#000"}}},pattern:{attr:{id:id.pattern,patternUnits:"userSpaceOnUse",x:0,y:0,width:300,height:300},image:{attr:{x:0,y:0,width:300,height:300}}}}};svg=domTree("svg",dom);text=document.createElement("div");text.setAttribute("class","ldBar-label");root.appendChild(svg);root.appendChild(text);group=[0,0];length=0;this.fit=function(){var that,box,d,rect;if(that=config["bbox"]){box=that.split(" ").map(function(it){return+it.trim()});box={x:box[0],y:box[1],width:box[2],height:box[3]}}else{box=group[1].getBBox()}if(!box||box.width===0||box.height===0){box={x:0,y:0,width:100,height:100}}d=Math.max.apply(null,["stroke-width","stroke-trail-width","fill-background-extrude"].map(function(it){return config[it]}))*1.5;if(config["padding"]!=null){d=+config["padding"]}svg.attrs({viewBox:[box.x-d,box.y-d,box.width+d*2,box.height+d*2].join(" ")});if(config["set-dim"]){["width","height"].map(function(it){if(!root.style[it]||this$.fit[it]){root.style[it]=box[it]+d*2+"px";return this$.fit[it]=true}})}rect=group[0].querySelector("rect");if(rect){return rect.attrs({x:box.x-d,y:box.y-d,width:box.width+d*2,height:box.height+d*2})}};if(config.path){if(isStroke){group[0]=domTree("g",{path:{attr:{d:config.path,fill:"none",class:"baseline"}}})}else{group[0]=domTree("g",{rect:{attr:{x:0,y:0,width:100,height:100,mask:"url(#"+id.maskPath+")",fill:config["fill-background"],class:"frame"}}})}svg.appendChild(group[0]);group[1]=domTree("g",{path:{attr:{d:config.path,class:isStroke?"mainline":"solid","clip-path":config.type==="fill"?"url(#"+id.clip+")":""}}});svg.appendChild(group[1]);path0=group[0].querySelector(isStroke?"path":"rect");path1=group[1].querySelector("path");if(isStroke){path1.attrs({fill:"none"})}patimg=svg.querySelector("pattern image");img=new Image;img.addEventListener("load",function(){var box,that;box=(that=config["pattern-size"])?{width:+that,height:+that}:img.width&&img.height?{width:img.width,height:img.height}:{width:300,height:300};svg.querySelector("pattern").attrs({width:box.width,height:box.height});return patimg.attrs({width:box.width,height:box.height})});if(/.+\..+|^data:/.exec(!isStroke?config.fill:config.stroke)){img.src=!isStroke?config.fill:config.stroke;patimg.attrs({"xlink:href":img.src})}if(isStroke){path0.attrs({stroke:config["stroke-trail"],"stroke-width":config["stroke-trail-width"]});path1.attrs({"stroke-width":config["stroke-width"],stroke:/.+\..+|^data:/.exec(config.stroke)?"url(#"+id.pattern+")":config.stroke})}if(config.fill&&!isStroke){path1.attrs({fill:/.+\..+|^data:/.exec(config.fill)?"url(#"+id.pattern+")":config.fill})}length=path1.getTotalLength();this.fit();this.inited=true}else if(config.img){if(config["img-size"]){ret=config["img-size"].split(",");size={width:+ret[0],height:+ret[1]}}else{size={width:100,height:100}}group[0]=domTree("g",{rect:{attr:{x:0,y:0,width:100,height:100,mask:"url(#"+id.mask+")",fill:config["fill-background"]}}});svg.querySelector("mask image").attrs({width:size.width,height:size.height});group[1]=domTree("g",{image:{attr:{width:size.width,height:size.height,x:0,y:0,preserveAspectRatio:config["aspect-ratio"],"clip-path":config.type==="fill"?"url(#"+id.clip+")":"","xlink:href":config.img,class:"solid"}}});img=new Image;img.addEventListener("load",function(){var ret,size,v;if(config["img-size"]){ret=config["img-size"].split(",");size={width:+ret[0],height:+ret[1]}}else if(img.width&&img.height){size={width:img.width,height:img.height}}else{size={width:100,height:100}}svg.querySelector("mask image").attrs({width:size.width,height:size.height});group[1].querySelector("image").attrs({width:size.width,height:size.height});this$.fit();v=this$.value;this$.value=undefined;this$.set(v,true);return this$.inited=true});img.src=config.img;svg.appendChild(group[0]);svg.appendChild(group[1])}svg.attrs({width:"100%",height:"100%"});this.transition={value:{src:0,des:0},time:{},ease:function(t,b,c,d){t=t/(d*.5);if(t<1){return c*.5*t*t+b}t=t-1;return-c*.5*(t*(t-2)-1)+b},handler:function(time,doTransition){var ref$,min,max,prec,dv,dt,dur,v,p,node,style,box,dir;doTransition==null&&(doTransition=true);if(this.time.src==null){this.time.src=time}ref$=[config["min"],config["max"],1/config["precision"]],min=ref$[0],max=ref$[1],prec=ref$[2];ref$=[this.value.des-this.value.src,(time-this.time.src)*.001,+config["duration"]||1],dv=ref$[0],dt=ref$[1],dur=ref$[2];v=doTransition?this.ease(dt,this.value.src,dv,dur):this.value.des;if(config.precision){v=Math.round(v*prec)/prec}else if(doTransition){v=Math.round(v)}v>=min||(v=min);v<=max||(v=max);text.textContent=v;p=100*(v-min)/(max-min);if(isStroke){node=path1;style={"stroke-dasharray":config["stroke-dir"]==="reverse"?"0 "+length*(100-p)*.01+" "+length*p*.01+" 0":p*.01*length+" "+((100-p)*.01*length+1)}}else{box=group[1].getBBox();dir=config["fill-dir"];style=dir==="btt"||!dir?{y:box.y+box.height*(100-p)*.01,height:box.height*p*.01,x:box.x,width:box.width}:dir==="ttb"?{y:box.y,height:box.height*p*.01,x:box.x,width:box.width}:dir==="ltr"?{y:box.y,height:box.height,x:box.x,width:box.width*p*.01}:dir==="rtl"?{y:box.y,height:box.height,x:box.x+box.width*(100-p)*.01,width:box.width*p*.01}:void 8;node=svg.querySelector("rect")}node.attrs(style);if(dt>=dur){delete this.time.src;return false}return true},start:function(src,des,doTransition){var ref$,this$=this;ref$=this.value;ref$.src=src;ref$.des=des;!!(root.offsetWidth||root.offsetHeight||root.getClientRects().length);if(!doTransition||!(root.offsetWidth||root.offsetHeight||root.getClientRects().length)){this.time.src=0;this.handler(1000,false);return}return handler.add(id.key,function(time){return this$.handler(time)})}};this.set=function(v,doTransition){var src,des;doTransition==null&&(doTransition=true);src=this.value||0;if(v!=null){this.value=v}else{v=this.value}des=this.value;return this.transition.start(src,des,doTransition)};this.set(+config.value||0,config["transition-in"])||false;return this};return window.addEventListener("load",function(){var i$,ref$,len$,node,results$=[];for(i$=0,len$=(ref$=document.querySelectorAll(".ldBar")).length;i$<len$;++i$){node=ref$[i$];if(!node.ldBar){results$.push(node.ldBar=new ldBar(node))}}return results$},false)})();module.exports=ldBar;function import$(obj,src){var own={}.hasOwnProperty;for(var key in src)if(own.call(src,key))obj[key]=src[key];return obj}},{"./presets":2}],2:[function(require,module,exports){var presets,out$=typeof exports!="undefined"&&exports||this;out$.presets=presets={rainbow:{type:"stroke",path:"M10 10L90 10",stroke:"data:ldbar/res,gradient(0,1,#a551df,#fd51ad,#ff7f82,#ffb874,#ffeb90)",bbox:"10 10 80 10"},energy:{type:"fill",path:"M15 5L85 5A5 5 0 0 1 85 15L15 15A5 5 0 0 1 15 5",stroke:"#f00",fill:"data:ldbar/res,gradient(45,2,#4e9,#8fb,#4e9)","fill-dir":"ltr","fill-background":"#444","fill-background-extrude":1,bbox:"10 5 80 10"},stripe:{type:"fill",path:"M15 5L85 5A5 5 0 0 1 85 15L15 15A5 5 0 0 1 15 5",stroke:"#f00",fill:"data:ldbar/res,stripe(#25b,#58e,1)","fill-dir":"ltr","fill-background":"#ddd","fill-background-extrude":1,bbox:"10 5 80 10"},text:{type:"fill",img:'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20" viewBox="0 0 70 20"><text x="35" y="10" text-anchor="middle" dominant-baseline="central" font-family="arial">LOADING</text></svg>',"fill-background-extrude":1.3,"pattern-size":100,"fill-dir":"ltr","img-size":"70,20",bbox:"0 0 70 20"},line:{type:"stroke",path:"M10 10L90 10",stroke:"#25b","stroke-width":3,"stroke-trail":"#ddd","stroke-trail-width":1,bbox:"10 10 80 10"},fan:{type:"stroke",path:"M10 90A40 40 0 0 1 90 90","fill-dir":"btt",fill:"#25b","fill-background":"#ddd","fill-background-extrude":3,"stroke-dir":"normal",stroke: "#25b","stroke-width":"3","stroke-trail":"#ddd","stroke-trail-width":.5,bbox:"10 50 80 40"},circle:{type:"stroke",path:"M50 10A40 40 0 0 1 50 90A40 40 0 0 1 50 10","fill-dir":"btt",fill:"#25b","fill-background":"#ddd","fill-background-extrude":3,"stroke-dir":"normal",stroke:"#25b","stroke-width":"3","stroke-trail":"#ddd","stroke-trail-width":.5,bbox:"10 10 80 80"},bubble:{type:"fill",path:"M50 10A40 40 0 0 1 50 90A40 40 0 0 1 50 10","fill-dir":"btt",fill:"data:ldbar/res,bubble(#39d,#cef)","pattern-size":"150","fill-background":"#ddd","fill-background-extrude":2,"stroke-dir":"normal",stroke:"#25b","stroke-width":"3","stroke-trail":"#ddd","stroke-trail-width":.5,bbox:"10 10 80 80"}}},{}]},{},[1]);</script>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+    document.getElementById('mobile-menu-button').onclick = function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    };
+    
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+        link.onclick = function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
+</html>
+
